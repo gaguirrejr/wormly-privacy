@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Wormly Privacy Policy</title>
+<meta name="description" content="What Wormly keeps about you, who it shares it with, and how to delete it.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+<style>
+  :root { --ground:#fff; --text:#2B1D12; --muted:#7A6A5C; --accent:#80552D; --panel:#F7F3EE; --line:#E8DFD4; }
+  @media (prefers-color-scheme: dark) { :root { --ground:#17120D; --text:#F3ECE4; --muted:#B5A696; --accent:#D9A774; --panel:#221B14; --line:#3A2F24; } }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--ground); color:var(--text); font:17px/1.6 Inter, -apple-system, system-ui, sans-serif; -webkit-text-size-adjust:100%; }
+  main { max-width:680px; margin:0 auto; padding:max(40px, env(safe-area-inset-top)) 20px 64px; }
+  .brand { font-weight:800; color:var(--accent); letter-spacing:-0.3px; font-size:20px; }
+  h1 { font-size:34px; line-height:1.15; letter-spacing:-0.8px; font-weight:800; margin:8px 0 6px; }
+  .updated { color:var(--muted); font-size:15px; margin:0 0 28px; }
+  h2 { font-size:21px; letter-spacing:-0.3px; font-weight:800; margin:40px 0 8px; }
+  p, li { margin:0 0 12px; }
+  ul { padding-left:22px; margin:0 0 12px; }
+  li::marker { color:var(--accent); }
+  strong { font-weight:600; }
+  a { color:var(--accent); }
+  .card { background:var(--panel); border:1px solid var(--line); border-radius:16px; padding:18px 20px; margin:20px 0; }
+  .card p:last-child, .card ul:last-child { margin-bottom:0; }
+  .label { font-size:12px; font-weight:600; letter-spacing:1px; text-transform:uppercase; color:var(--muted); margin:0 0 8px; }
+</style>
+</head>
+<body>
+<main>
+  <div class="brand">Wormly</div>
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated September 28, 2026</p>
+
+  <div class="card">
+    <p class="label">The short version</p>
+    <ul>
+      <li>Wormly keeps your library and your club so they're there on any phone you sign in on.</li>
+      <li>No ads, no tracking, no analytics companies, and your information is never sold.</li>
+      <li>People in your book club can see your name, your picture and the books on your shelf. Nobody else can.</li>
+      <li>You can delete your account, and everything tied to it, from inside the app.</li>
+    </ul>
+  </div>
+
+  <p>Wormly is an app for keeping track of your books and reading with a book club. It's made by Gustavo Aguirre Jr, an independent developer ("Wormly", "we"). This policy explains what Wormly keeps, why, and what you can do about it. Wormly is currently in beta, so it may change as the app does; see <a href="#changes">Changes</a>.</p>
+
+  <h2>What Wormly keeps</h2>
+  <p><strong>Your account.</strong> You sign in with Apple. Apple gives Wormly an identifier for your Apple ID, your email address (or a private relay address, if you choose Hide My Email) and, the first time only, your name if you choose to share it.</p>
+  <p><strong>Your profile.</strong> Your display name, your picture (one of Wormly's avatars, your initials, or a photo you choose), the genres you like, and which way you started using the app.</p>
+  <p><strong>Your library.</strong> The books you add and how you added them (scan, search or by hand), when you added them, which you're currently reading, which you've read, the tags you give them, the covers you choose, and photos you take of covers.</p>
+  <p><strong>Your club.</strong> Which club you're in, when you joined, whether you run it, and the club's current pick.</p>
+  <p><strong>Reports you send.</strong> If you report a problem with a book's details, the book and any note you write.</p>
+  <p><strong>How the app is used.</strong> A simple record of each time you add a book (how you started, whether it worked, how long it took) and a daily count of searches, so we can fix what's hard and keep costs in check. This stays in Wormly's own database; no analytics company is involved.</p>
+  <p>Wormly also keeps a copy of your library on your phone, so it works without a connection.</p>
+
+  <h2>Camera and photos</h2>
+  <p>Wormly asks for the camera to scan barcodes and photograph book covers, and for your photo library only when you choose a photo for your picture. When a book has no barcode, Wormly first tries to read its cover on your phone. If it can't, the cover photo is sent to our AI provider (see below) to read the title and author. That photo isn't stored, and it's sent without your name or account.</p>
+
+  <h2>Who can see what</h2>
+  <p><strong>Members of your book club</strong> can see your name, your picture, your favorite genres, the books on your shelf (including which you're currently reading and when you added them) and the club's pick.</p>
+  <p><strong>Nobody else</strong> can see your read marks, your tags, your cover photos or your email address. Wormly has no public profiles and no messaging between people.</p>
+
+  <h2>Who Wormly works with</h2>
+  <p>Wormly relies on a few service providers to run. They get only what they need to do their part:</p>
+  <ul>
+    <li><strong>Supabase</strong> stores Wormly's database, sign-in and photos, on servers in the United States.</li>
+    <li><strong>Apple</strong> handles Sign in with Apple, and is told when you delete your account so Wormly's link to your Apple ID is removed.</li>
+    <li><strong>Anthropic</strong> (the AI provider) reads the title and author from a cover photo, as described above.</li>
+    <li><strong>Hardcover</strong> and <strong>ISBNdb</strong> provide book details. Wormly's servers send them ISBNs, author names and what you search for, never who you are.</li>
+    <li><strong>Cover images</strong> load directly from Open Library, ISBNdb and Hardcover, so those sites see your phone's internet address, as any website would.</li>
+    <li><strong>Store links</strong> to Bookshop.org, Amazon and Audible only open when you tap them. Wormly may earn a commission on some purchases. Once you're on those sites, their own privacy policies apply.</li>
+  </ul>
+  <p>Wormly doesn't sell your information, share it for advertising, or track you across other apps and websites.</p>
+
+  <h2>How long it's kept</h2>
+  <p>Your information is kept for as long as you have a Wormly account. Signing out removes your library from that phone; it stays in your account for when you sign back in.</p>
+
+  <h2>Deleting your account</h2>
+  <p>Go to <strong>Profile → Delete account</strong>. This permanently deletes your account, profile, library, read marks, tags, covers, photos and club membership, from your phone and from Wormly's servers, and removes Wormly from your Apple ID's Sign in with Apple list. If you ran a club, it passes to the member who's been there longest.</p>
+  <p>A few things aren't tied to you and remain: reports you sent about book details (without your name), and Wormly's shared catalogue of book information, including anonymous search results. Copies may also remain in our provider's backups for a short time before they expire.</p>
+
+  <h2>Children</h2>
+  <p>Wormly isn't meant for children under 13, and we don't knowingly collect information from them. If you believe a child has an account, contact us and we'll delete it.</p>
+
+  <h2>Your choices</h2>
+  <p>You can change your name, picture and genres in the app, and delete your account at any time. To ask what Wormly holds about you, or for anything else about your privacy, email us.</p>
+
+  <h2 id="changes">Changes</h2>
+  <p>If this policy changes, the new version will be posted here with a new date. If a change affects how your information is shared, we'll tell you in the app first.</p>
+
+  <h2>Contact</h2>
+  <p>Email <a href="mailto:wormlyfolk@gmail.com">wormlyfolk@gmail.com</a>.</p>
+</main>
+</body>
+</html>
